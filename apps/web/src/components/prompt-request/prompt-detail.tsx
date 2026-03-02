@@ -278,7 +278,7 @@ export function PromptDetail({
 				{/* Left — Prompt body + actions */}
 				<div className="flex-1 min-w-0 space-y-4">
 					{/* Body */}
-					<div className="border border-border rounded-lg p-4">
+					<div className="border border-border rounded-md p-4">
 						<ClientMarkdown content={promptRequest.body} />
 					</div>
 
@@ -336,7 +336,7 @@ export function PromptDetail({
 							<button
 								onClick={handleCopy}
 								className={cn(
-									"flex items-center gap-1 px-2.5 py-1.5 text-[11px] font-medium rounded-md border transition-all cursor-pointer",
+									"flex items-center gap-1 px-2.5 py-1.5 text-[11px] font-medium rounded-sm border transition-all cursor-pointer",
 									copied
 										? "bg-green-500/15 text-green-400 border-green-500/20"
 										: "bg-muted/50 text-muted-foreground border-border hover:bg-muted hover:text-foreground",
@@ -423,7 +423,7 @@ export function PromptDetail({
 												comment.id
 											}
 											className={cn(
-												"border border-border/60 rounded-lg p-3 space-y-1.5",
+												"border border-border/60 rounded-md p-3 space-y-1.5",
 												comment.id.startsWith(
 													"optimistic-",
 												) &&
