@@ -260,7 +260,7 @@ export function PRDetailLayout({
 
 					{/* Right panel (conversation) */}
 					<div
-						className="relative min-h-0 flex flex-col overflow-hidden pl-3"
+						className="relative min-h-0 overflow-hidden pl-3"
 						style={{
 							width: `${100 - splitRatio}%`,
 							transition: isDragging
@@ -269,7 +269,7 @@ export function PRDetailLayout({
 						}}
 					>
 						{!chatCollapsed && (
-							<>
+							<div className="w-full h-full flex flex-col max-w-[1000px] mx-auto">
 								<div className="shrink-0 flex items-center px-2 pt-2">
 									<button
 										onClick={() =>
@@ -299,7 +299,7 @@ export function PRDetailLayout({
 										{commentForm}
 									</div>
 								)}
-							</>
+							</div>
 						)}
 					</div>
 				</div>

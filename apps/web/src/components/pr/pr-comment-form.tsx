@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
 import { CornerDownLeft } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { addPRComment } from "@/app/(app)/repos/[owner]/[repo]/pulls/pr-actions";
