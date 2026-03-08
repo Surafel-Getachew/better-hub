@@ -324,6 +324,7 @@ export default async function PRDetailPage({
 			comments: reviewCommentsByReviewId.get(r.id) || [],
 		});
 	}
+
 	for (const c of commits) {
 		const commitUser = c.author;
 		const entry: CommitEntry = {
